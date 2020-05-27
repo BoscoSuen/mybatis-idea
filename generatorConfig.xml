@@ -12,8 +12,8 @@
             <property name="mappers" value="com.imooc.utils.MyMapper"/>
         </plugin>
 
-        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/tiktok?serverTimezone=UTC"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/tiktok"
                         userId="root"
                         password="suen0903">
         </jdbcConnection>
@@ -21,15 +21,15 @@
         <!-- 对应生成的pojo所在包 -->
         <javaModelGenerator targetPackage="com.imooc.pojo" targetProject="src/main/java"/>
 
-		<!-- 对应生成的mapper所在目录 -->
+        <!-- 对应生成的mapper所在目录 -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
-		<!-- 配置mapper对应的java映射 -->
-        <javaClientGenerator targetPackage="com.imooc.mapper" targetProject="src/main/java" 
-        type="XMLMAPPER"/>
+        <!-- 配置mapper对应的java映射 -->
+        <javaClientGenerator targetPackage="com.imooc.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
 
 
-		<table tableName="bgm"></table>
+        <table tableName="bgm"></table>
         <table tableName="comments"></table>
         <table tableName="search_records"></table>
         <table tableName="users"></table>
@@ -37,7 +37,6 @@
         <table tableName="users_like_videos"></table>
         <table tableName="users_report"></table>
         <table tableName="videos"></table>
-
 
     </context>
 </generatorConfiguration>

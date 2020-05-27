@@ -1,4 +1,4 @@
-# Mybatis Generator in IDEA
+# Mybatis Generator for Springboot in IDEA
 
 ## Usage
 -   Delete files in java/\*/mapper, java/\*/pojo, and resources/mapper  
